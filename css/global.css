@@ -1,0 +1,205 @@
+/* Global Styles */
+
+/*  Here we go */
+/* This is the general style of the pages - including base font and color */
+body {
+	background-color:white;
+	font-family: sans-serif;
+}
+/*  This is used to clear any floats.  We just add the class of group to anything we need cleared */
+.group:after {
+	content: " ";
+	display:table;
+	clear: both;
+}
+
+#wrapper {
+	margin: 0 auto 75px;
+	width: 75%; /* we give percentages for responsiveness */
+}
+
+
+/* Header begins here */
+
+.header-bar {
+	width: 100%;
+	height: 10px;
+	background-color: #ce1a13;
+}
+
+header {
+	width: 100%;
+	position: relative;
+	padding-bottom:20px;
+	height: 200px;
+}
+
+.site-branding {
+	position: relative;
+	height:200px;
+	width: 75%;
+}
+
+.site-branding h1.site-title {
+	background-image: url(../images/logo.png);
+	height: 81px;
+	width: 254px;
+	text-indent: -9999px;
+	position: absolute;
+	top:40px;
+}
+
+.site-branding h2 {
+	font-size: 16px;
+	font-weight: 200;
+	font-style: oblique;
+	position: absolute;
+	right: 0;
+	bottom: 75px;
+	color: #575757;
+}
+
+#site-navigation {
+	position: absolute;
+	right: 0;
+	top: 35px;
+}
+
+#site-navigation ul li {
+	float:left;
+}
+
+#site-navigation ul li a {
+	text-decoration: none;
+	color: #333333;
+	padding: 0 16px;
+	border-right:1px solid #999999;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight:800;
+}
+#site-navigation ul li:last-child a {
+	border-right:none;
+	padding-right:0px;
+}
+
+.header-bottom-bar {
+	width: 100%;
+	height: 2px;
+	background-color: #ce1a13;
+}
+
+.nav-below-header ul {
+	padding: 0;
+	margin: 5px 0 0 0;
+}
+
+.nav-below-header ul li {
+	list-style:none;
+}
+
+.nav-below-header ul li a{
+	text-decoration: none;
+	color: #333333;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight:bold;
+	padding:0;	
+}
+
+#primary {
+	border-top: 1px solid #e3e3e3;
+	margin-top:5px;
+}
+
+.site-content {
+	width: 95%;
+	margin: 20px auto;
+}
+
+.single-tile-wrapper { 
+	width:33.3%;
+}
+
+.single-tile-wrapper .image {
+	width: 200px;
+	margin: 0 auto;
+}
+
+.single-tile-wrapper .image img {
+	border: solid 3px #ce1a13;
+	margin: 0 auto;
+}
+
+.single-tile-wrapper .button-wrapper {
+	width: 156px;
+	margin: 0 auto;
+}
+
+.single-tile-wrapper button {
+	height: 35px;
+	width: 156px;
+	border-radius:5px;
+	margin: 10px auto;
+	background: #ce1a13; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2NlMWExMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNiUiIHN0b3AtY29sb3I9IiNjZTFhMTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNjZTFhMTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MSUiIHN0b3AtY29sb3I9IiNiMjE1MTAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYjIxNTEwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+	background: -moz-linear-gradient(top,  #ce1a13 1%, #ffffff 3%, #ce1a13 6%, #ce1a13 50%, #b21510 51%, #b21510 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ce1a13), color-stop(3%,#ffffff), color-stop(6%,#ce1a13), color-stop(50%,#ce1a13), color-stop(51%,#b21510), color-stop(100%,#b21510)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ce1a13 1%,#ffffff 3%,#ce1a13 6%,#ce1a13 50%,#b21510 51%,#b21510 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ce1a13 1%,#ffffff 3%,#ce1a13 6%,#ce1a13 50%,#b21510 51%,#b21510 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ce1a13 1%,#ffffff 3%,#ce1a13 6%,#ce1a13 50%,#b21510 51%,#b21510 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ce1a13 1%,#ffffff 3%,#ce1a13 6%,#ce1a13 50%,#b21510 51%,#b21510 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce1a13', endColorstr='#b21510',GradientType=0 ); /* IE6-8 */
+	border: solid 1px #ffffff;
+}
+
+.single-tile-wrapper button a {
+	text-decoration:none;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.single-tile-title {
+	width:100%;
+	text-align:center;
+}
+
+.single-tile-title h2 {
+	font-size: 24px;
+	color: #ce1a13;
+	font-weight: normal;
+	margin: 0 0 15px 0;
+	padding:0;
+}
+
+.social-media {
+	width: 200px;
+	margin:0 auto;
+}
+
+.site-footer {
+	height: 179px;
+	background-color: #ce1a13;
+	padding-top:1px;
+}
+
+.site-info {
+	color: #ffffff;
+	text-align:center;
+	margin-top: 70px;
+}
+
+.site-info p {
+	font-size: 12px;
+	font-weight: 400;
+}
+
+
+
+
+
+
+
+/* end css */
+
