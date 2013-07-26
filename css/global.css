@@ -119,6 +119,7 @@ header {
 
 .single-tile-wrapper { 
 	width:33.3%;
+	float:left;
 }
 
 .single-tile-wrapper .image {

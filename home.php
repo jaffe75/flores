@@ -7,7 +7,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+		<div id="content" class="site-content group" role="main">
 			<?php $tilemenu = new WP_Query(array(
 				'post_type' => 'tile-links',
 				'posts_per_page' => 3
