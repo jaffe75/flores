@@ -18,7 +18,7 @@ get_header(); ?>
 					<h2><?php the_title(); ?></h2>
 				</div>
 				<div class="image">
-					<?php the_post_thumbnail(); ?>
+					<?php the_post_thumbnail('tile'); ?>
 				</div>
 				<div class="button-wrapper">
 					<button class="tile-button">
